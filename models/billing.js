@@ -1,10 +1,10 @@
 const {Model} = require('objection');
 
-class user extends Model {
+class billing extends Model {
     static get tableName(){
-        return 'Users'
+        return 'billing'
     }
    
 } 
 
-module.exports = user
+module.exports = billing

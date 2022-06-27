@@ -1,0 +1,43 @@
+<form action="/Topup" method="POST">
+
+  <div>
+         <h1>Topup Category</h1>
+
+         <h2>Select Anyone of the Below SubCategory</h2>
+  
+         <% result.forEach(entry =>{ %>
+           <h3><%= entry.name %></h3>
+         <% }) %>
+    
+<label for="subcategory_name"><b>Subcategory Name</b></label>
+
+<input type="text" name="subcategory_name" placeholder="Enter Subcategory">
+
+</div>
+<br>
+<div>
+
+<label for="text"><b>Name</b></label>
+
+<input type="text" name="name" placeholder="enter your name"><br><br>
+  
+</div>
+
+<div>
+
+  <label for="email"><b>email address</b></label>
+
+<input type="text" name="email" placeholder="enter your email"><br><br>
+  
+</div>
+<div>
+  <label for="password"><b>Password</b></label>
+
+  <input type="password" name="password" placeholder="enter your password"><br><br>
+  
+</div>
+
+<button type="submit" class="btn btn-primary btn-block">submit</button>
+   
+</form>  
+ 

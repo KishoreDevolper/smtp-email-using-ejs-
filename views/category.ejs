@@ -1,0 +1,22 @@
+<h1>Welcome</h1>
+
+<h2>Select Anyone of the Below Category</h2>
+
+<% data.forEach(entry =>{ %>
+    <h1><%= entry.category_name %></h1>
+  <% }) %>
+
+<form action="/category" method="post">
+<div>
+<label for="category"><b>Category Name</b></label>
+<input
+type="text"
+name="category"
+placeholder="Enter category"
+
+/>
+</div>
+<button type="submit" class="btn btn-primary btn-block">submit</button>
+   
+</form>
+    
