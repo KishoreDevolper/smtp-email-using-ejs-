@@ -1,7 +1,5 @@
 const express = require('express');
 
-const router = express.Router();
-
 const app = express();
 
 const expressEjsLayout = require('express-ejs-layouts')
@@ -12,8 +10,6 @@ const dbsetup = require('./db/seeds/db-setup');
 
 dbsetup();   
    
-  
-
 app.set('view engine','ejs');
 
 app.use(expressEjsLayout); 
@@ -28,6 +24,7 @@ app.use(session({
            
 //Routes   
 app.use('/hello',require('./routes/index'));
+
 app.use('/',require('./routes/mail'));
   
 app.listen(3001,console.log("connected"))
